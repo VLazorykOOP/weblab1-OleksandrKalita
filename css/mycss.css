@@ -173,21 +173,22 @@ body{
 }
 .main__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     column-gap: 30px;
     justify-content: space-around;
     padding-top: 70px;
     padding-bottom: 70px;
 }
 .avata-picture {
-    width: 345px;
-    height: 354px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
 }
 .my-bio p {
+    font-size: 20px;
 }
 .my-bio p + p {
-    margin-top: 12px;
+    margin-top: 25px;
 }
 .footer {
     width: 100%;
@@ -233,4 +234,104 @@ body{
 }
 .about-text p + p {
     padding-top: 20px;
+}
+
+
+
+
+/* - - NEWS section styles - - */
+.news__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 85px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    color: black;
+}
+.news__headline {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+.news__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+    width: 100%;
+    align-items: stretch;
+}
+.list__item {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    padding: 20px 20px;
+    position: relative;
+}
+.item__button{
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    border-radius: 20px;
+    background-color: black;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: all 0.3s;
+}
+.item__button:hover {
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid black;
+}
+.item_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 20px;
+
+}
+.item__photo {
+    width: 350px;
+    height: 350px;
+}
+.item__title {
+    font-size: 26px;
+    font-weight: 500;
+}
+.item__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.info__con {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.characteristics-block {
+}
+.characteristics-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: auto;
+    height: 100%;
+}
+.list-item {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 10px;
+}
+.item-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+.item-data {
+    font-size: 18px;
+}
+.description-block {
+    font-size: 20px;
+
 }
