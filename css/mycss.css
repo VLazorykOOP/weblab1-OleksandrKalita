@@ -50,8 +50,8 @@ body{
     justify-content: flex-start;
     align-items: center;
     height: 100%;
-    padding: 35px;
-    padding: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 .header__container nav {
     flex: 1 1 auto;
@@ -66,6 +66,8 @@ body{
     display: flex;
     justify-content: flex-end;
     margin-right: 172px;
+    flex-wrap: wrap;
+    row-gap: 10px;
 }
 .menu-links li + li{
     margin-left: 50px;
@@ -108,6 +110,7 @@ body{
     margin-top: -100px;
 }
 .starter-section {
+    position: relative;
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -122,10 +125,6 @@ body{
     row-gap: 62px;
     height: 100%;
 }
-.starter__filter{
-    position: sticky;
-    height: 100%;
-}
 .starter__container::before {
     content: "";
     position: absolute;
@@ -135,6 +134,24 @@ body{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.starter__container.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 62px;
+    height: 100%;
+    text-align: center;
+}
+.starter__container.center .starter__headline{
+    font-size: 64px;
+}
+.starter__container.center .starter-slogan{
+    font-size: 22px;
+    line-height: 30px;
+}
+
 .starter__headline {
     font-size: 40px;
     font-weight: 600;
@@ -155,16 +172,26 @@ body{
 .main-section {
 }
 .main__container {
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+    justify-content: space-around;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 .avata-picture {
-    width: 520px;
-    height: 520px;
+    width: 345px;
+    height: 354px;
+    border-radius: 50%;
 }
-.my-bio {
+.my-bio p {
+}
+.my-bio p + p {
+    margin-top: 12px;
 }
 .footer {
     width: 100%;
-    height: 150px;
+    height: 120px;
     background-color: #212121;
 }
 .footer__container {
@@ -176,4 +203,34 @@ body{
 .footer__container a {
     font-size: 16px;
     color: #FFFFFF;
+}
+
+
+.main-main__container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 75px;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+.about-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    letter-spacing: 9%;
+    color: black;
+}
+.about-headline {
+    font-size: 30px;
+    font-weight: 600;
+}
+.about-headline.center{
+    text-align: center;
+}
+.about-text {
+    font-size: 22px;
+    font-weight: 300;
+}
+.about-text p + p {
+    padding-top: 20px;
 }
