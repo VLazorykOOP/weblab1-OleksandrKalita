@@ -329,7 +329,25 @@ body{
     font-weight: 600;
 }
 .item-data {
+    position: relative;
     font-size: 18px;
+}
+#data-dol{
+    position: absolute;
+    top: 0;
+    transition: var(--transition-1s);
+}
+#data-uah{
+    position: sticky;
+    top: 0;
+    opacity: 0;
+    transition: var(--transition-1s);
+}
+.item-data:hover #data-dol {
+    opacity: 0;
+}
+.item-data:hover #data-uah {
+    opacity: 1;
 }
 .description-block {
     font-size: 20px;
