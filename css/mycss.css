@@ -360,26 +360,27 @@ body{
 }
 
 
-.nasted-list {
+.nested-list {
 }
-.nasted-item {
+.nested-item {
     color: #212121;
     font-size: 20px;
     margin-left: 35px;
     list-style:circle;
     padding-top: 7px;
 }
-.nasted-item a {
+.nested-item a {
     color: #212121;
     transition: 0.3s all;
 }
-.nasted-item a:hover {
+.nested-item a:hover {
     text-decoration: underline;
 }
 
 ol li {
     font-size: 23px;
     padding-top: 10px;
+    list-style-type: lower-alpha;
 }
 .list-headline {
     font-weight: 600; 
