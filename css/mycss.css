@@ -385,4 +385,52 @@ ol li {
 .list-headline {
     font-weight: 600; 
     font-size: 28px;
+    position:
+}
+
+
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.table, th, td {
+    border: 1px solid #909090;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #ccc;
+}
+
+
+.td-color,
+.td-price {
+    flex: 1;
+    height: 30px;
+    padding-top: 5px;
+} 
+
+.td-with-div {
+   display: flex;
+   padding: 0;
+}
+
+.td-with-div div + div {
+    border-left: inherit;
+}
+
+.special-fied {
+    display: flex;
+    border: none;
+    padding: 0;
+}
+.special-fied div {
+    flex: 1;
+    padding: 10px;
+}
+.special-fied div + div {
+    border-left: 1px solid #909090;
 }
