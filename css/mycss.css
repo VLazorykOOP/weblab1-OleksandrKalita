@@ -426,6 +426,7 @@ th {
     display: flex;
     border: none;
     padding: 0;
+    border-bottom: 1px solid #909090;
 }
 .special-fied div {
     flex: 1;
